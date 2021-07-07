@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import "scss/_variables.scss";
+
+*{
+    box-sizing: border-box;
+}
+main.home{
+    background: $btn;
+}
+.home-bg{
+    background-image: url('./images/bg.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Playfair', 'Times New Roman', Times, serif;
+}
+
+.text-accent{
+    color: $btn;
+}
+
+.featured-img-wrapper{
+width: 100%;
+height: 300px;
+overflow : hidden;
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+@media (min-width: 1024px){
+    height: 100%;
+}
+}
+
+.blog{
+    background: $blog-bg;
+    
+
+}
+
+
+
+.bg-primary, .bg-primary-dark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-primary{
+    background: $primary!important;
+    color: white;
+}
+
+.bg-primary-dark{
+    background: $primary-dark;
+    color: white;
+}
+
+.btn-primary{
+background: $btn!important;
+border-color: $btn!important;
+color: $primary-dark;
+border-radius: 2px;
+&:hover{
+    background: darken($btn, 20%)!important;
+}
+}
+
+.list-group-item{
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: white;
+    &:last-child{
+        margin-bottom: 1em;
+    }
+}
+
+footer{
+    background: #b2aa8c;
+}
